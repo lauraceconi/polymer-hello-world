@@ -1,5 +1,6 @@
 {
   "entrypoint": "index.html",
+  "base_path": "polymer-pwa",
   "shell": "src/my-app.js",
   "sources": [
     "images/**/*"
