@@ -5,7 +5,7 @@
   "background_color": "#c0392b",
   "display": "standalone",
   "Scope": "/",
-  "start_url": "/polymer-pwa/index.html/",
+  "start_url": "/polymer-pwa/",
   "icons": [
     {
       "src": "images/manifest/icon-48x48.png",
