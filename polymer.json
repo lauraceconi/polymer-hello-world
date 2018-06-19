@@ -1,6 +1,5 @@
 {
-  "entrypoint": "index.html",
-  "base_path": "polymer-pwa",
+  "entrypoint": "index.html",  
   "shell": "src/my-app.js",
   "sources": [
     "images/**/*"
@@ -62,7 +61,8 @@
         "minify": true
       },
       "bundle": true,
-      "addServiceWorker": true
+      "addServiceWorker": true,
+      "basePath": "/polymer-pwa/"
     }
   ],
   "moduleResolution": "node",

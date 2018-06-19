@@ -11,12 +11,21 @@
 module.exports = {
   staticFileGlobs: [
     'src/**/*',
+    'images/**/*',
     'manifest.json'
   ],
   runtimeCaching: [
     {
       urlPattern: /\/@webcomponents\/webcomponentsjs\//,
       handler: 'fastest'
+    },
+    {
+      urlPattern: /^https:\/\/api\.themoviedb\.org/,
+      handler: 'networkFirst'
+    },
+    {
+      urlPattern: /^https:\/\/image\.tmdb.org/,
+      handler: 'networkFirst'
     }
   ]
 };

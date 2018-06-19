@@ -93,12 +93,13 @@ class MyApp extends PolymerElement {
         <!-- Drawer content -->
         <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
           <app-toolbar class="topo-menu">
-            <img src="../images/53-512.png">          
+            <img src="[[rootPath]]images/53-512.png">          
           </app-toolbar>
           <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
             <a name="ultimos-lancamentos" href="[[rootPath]]ultimos-lancamentos">Lançamentos</a>
             <a name="view2" href="[[rootPath]]view2">Mais vistos</a>
             <a name="view3" href="[[rootPath]]view3">Notícias</a>
+            <my-view404 name="view404"></my-view404>
           </iron-selector>
         </app-drawer>
 
@@ -116,7 +117,6 @@ class MyApp extends PolymerElement {
             <ultimos-lancamentos name="ultimos-lancamentos"></ultimos-lancamentos>
             <my-view2 name="view2"></my-view2>
             <my-view3 name="view3"></my-view3>
-            <my-new-view name="new-view"></my-new-view>
             <my-view404 name="view404"></my-view404>
           </iron-pages>
         </app-header-layout>
